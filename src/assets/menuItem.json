@@ -1,0 +1,60 @@
+{
+    "menuItems": [
+        {
+            "label": "Home",
+            "meta": "Home"
+
+        },
+        {
+            "label": "Courses",
+            "items": [
+                {
+                    "label": "CBSE",
+                    "id": "CBSE",
+                    "meta": "CBSE",
+                    "items": [
+                        {
+                            "label": 6,
+                            "board": "CBSE",
+                            "meta": "Class"
+                        },
+                        {
+                            "label": 7,
+                            "board": "CBSE",
+                            "meta": "Class"
+                        },
+                        {
+                            "label": 8,
+                            "board": "CBSE",
+                            "meta": "Class"
+                        },
+                        {
+                            "label": 9,
+                            "board": "CBSE",
+                            "meta": "Class"
+                        },
+                        {
+                            "label": 10,
+                            "board": "CBSE",
+                            "meta": "Class"
+                        },
+                        {
+                            "label": 11,
+                            "board": "CBSE",
+                            "meta": "Class"
+                        },
+                        {
+                            "label": 12,
+                            "board": "CBSE",
+                            "meta": "Class"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "label": "About",
+            "meta": "About"
+        }
+    ]
+}
