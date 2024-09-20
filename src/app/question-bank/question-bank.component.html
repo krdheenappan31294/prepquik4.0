@@ -1,0 +1,51 @@
+<div class="question-bank-container">
+  <div class="card flex justify-content-center bank-container">
+    <form
+      #questionBankForm="ngForm"
+      (ngSubmit)="onSubmit(questionBankForm)"
+      class="question-bank-form flex flex-row flex-wrap justify-content-flex-start"
+    >
+      <span *ngFor="let dropdown of questionBankdropdowns">
+        <label class="bank-dropdowns-label text-lg" for="bank-dropdowns">
+          {{ dropdown.label }}</label
+        >
+        <p-dropdown
+          [options]="dropdown.items"
+          optionLabel="label"
+          [name]="dropdown.label"
+          class="bank-dropdowns"
+          ngModel
+          (onChange)="onDropDownClick($event)"
+        ></p-dropdown>
+      </span>
+      <span>
+        <p-button class="menu-submit" type="submit" label="Submit"></p-button>
+      </span>
+    </form>
+  </div>
+  <div class="question-answers">
+    <ol type="1" class="accordion-list">
+      <li
+        class="bank-list"
+        *ngFor="let item of commonService.questionAndAnswersArray"
+      >
+        <label for="accordion-answers" class="questions text-lg">
+          {{ item.Questions }}</label
+        >
+        <p-accordion>
+          <p-accordionTab header="See answer">
+            <p
+              id="accordion-answers"
+              class="accordion-answers"
+              [innerText]="item.Answers"
+            ></p>
+          </p-accordionTab>
+        </p-accordion>
+      </li>
+    </ol>
+  </div>
+</div>
+<!-- <ngx-extended-pdf-viewer
+      [src]="pdfSrc"
+   >
+    </ngx-extended-pdf-viewer> -->
