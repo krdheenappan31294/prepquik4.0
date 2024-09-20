@@ -1,0 +1,65 @@
+<div class="question-bank-container">
+  <div class="card flex justify-content-center bank-container">
+    <form
+      #questionBankForm="ngForm"
+      (ngSubmit)="onSubmit(questionBankForm)"
+      class="question-bank-form flex flex-row flex-wrap justify-content-flex-start"
+    >
+      <span *ngFor="let dropdown of questionBankdropdowns">
+        <label class="bank-dropdowns-label text-lg" for="bank-dropdowns">
+          {{ dropdown.label }}</label
+        >
+        <p-dropdown
+          [options]="dropdown.items"
+          optionLabel="label"
+          [name]="dropdown.label"
+          class="bank-dropdowns"
+          ngModel
+          (onChange)="onDropDownClick($event)"
+        ></p-dropdown>
+      </span>
+      <span>
+        <p-button class="menu-submit" type="submit" label="Submit"></p-button>
+      </span>
+    </form>
+  </div>
+  <div
+    class="question-answers"
+    *ngIf="commonService.questionAndAnswersArray.length"
+  >
+    <ol type="1" class="accordion-list">
+      <li
+        class="bank-list"
+        *ngFor="let item of commonService.questionAndAnswersArray"
+      >
+        <label for="accordion-answers" class="questions text-lg">
+          {{ item.Questions }}</label
+        >
+        <p-accordion>
+          <p-accordionTab header="See answer">
+            <p
+              id="accordion-answers"
+              class="accordion-answers"
+              [innerText]="item.Answers"
+            ></p>
+          </p-accordionTab>
+        </p-accordion>
+      </li>
+    </ol>
+  </div>
+</div>
+<div class="summary-container" >
+<div class="card flex justify-content-center" *ngIf="commonService.textContent">
+  <p-card >
+      <p class="m-0" [innerText]="commonService.textContent">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque
+          quas!
+      </p>
+  </p-card>
+</div>
+</div>
+
+
+<div>
+  <ngx-extended-pdf-viewer [src]="'commonService.pdfSrc'" [useBrowserLocale]="true" height="80vh"></ngx-extended-pdf-viewer>
+</div>
