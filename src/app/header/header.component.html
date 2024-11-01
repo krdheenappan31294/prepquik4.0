@@ -1,0 +1,26 @@
+<div class="card menubar_wrapper">
+  <p-menubar #menuBar [model]="menuitems" class="custom_menubar header_menubar">
+    <ng-template pTemplate="start">
+      <a class="brand_name" aria-label="Prepquik" href="/">
+        <img
+          id="header_logo"
+          class="brand_name"
+          [src]="defUrls.NAV_IMAGE_URL"
+          [alt]="defNames.PREPQUIK_PASCAL"
+          width="50" 
+          height="40"
+        />
+      </a>
+    </ng-template>
+    <ng-template pTemplate="end">
+      <div class="card flex justify-content-center">
+        <span class="theme_label text-lg font-semiboldx">{{defNames.DARK_MODE}}</span>
+        <p-inputSwitch
+          [(ngModel)]="isDarkTheme"
+          class="inputSwitch ml-2"
+          (click)="
+            onThemeChange(themeService.activeTheme === defNames.DARK ? defNames.LIGHT : defNames.DARK)"/>
+      </div>
+    </ng-template>
+  </p-menubar>
+</div>

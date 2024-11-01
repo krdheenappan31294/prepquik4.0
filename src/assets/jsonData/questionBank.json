@@ -1,0 +1,171 @@
+{
+  "banks": {
+    "boards": [
+      {
+        "label": "CBSE",
+        "classes": [
+          {
+            "label": "6",
+            "subjects": [
+              {
+                "label": "Civics",
+                "chapters": [
+                  {
+                    "label": "Diversity and Discrimination",
+                    "questionTypes": [
+                      { "label": "Long Answers" },
+                      { "label": "Short Answers" },
+                      { "label": "Multiple Choice" },
+                      { "label": "Summary" }
+                    ]
+                  },
+                  {
+                    "label": "Panchayati Raj",
+                    "questionTypes": [
+                      { "label": "Long Answers" },
+                      { "label": "Short Answers" },
+                      { "label": "Multiple Choice" },
+                      { "label": "Summary" }
+                    ]
+                  },
+                  {
+                    "label": "Rural Administration",
+                    "questionTypes": [
+                      { "label": "Long Answers" },
+                      { "label": "Short Answers" },
+                      { "label": "Multiple Choice" },
+                      { "label": "Summary" }
+                    ]
+                  },
+                  {
+                    "label": "Understanding Diversity",
+                    "questionTypes": [
+                      { "label": "Long Answers" },
+                      { "label": "Short Answers" },
+                      { "label": "Multiple Choice" },
+                      { "label": "Summary" }
+                    ]
+                  },
+                  {
+                    "label": "Urban Livelihoods",
+                    "questionTypes": [
+                      { "label": "Long Answers" },
+                      { "label": "Short Answers" },
+                      { "label": "Multiple Choice" },
+                      { "label": "Summary" }
+                    ]
+                  }
+                ]
+              },
+              {
+                "label": "English",
+                "chapters": [
+                  {
+                    "label": "A Gift of Chappals",
+                    "questionTypes": [
+                      { "label": "Long Answers" },
+                      { "label": "Short Answers" },
+                      { "label": "Multiple Choice" },
+                      { "label": "Summary" }
+                    ]
+                  },
+                  {
+                    "label": "A Tiger in the House",
+                    "questionTypes": [
+                      { "label": "Long Answers" },
+                      { "label": "Short Answers" },
+                      { "label": "Multiple Choice" },
+                      { "label": "Summary" }
+                    ]
+                  },
+                  {
+                    "label": "An Alien Hand",
+                    "questionTypes": [
+                      { "label": "Long Answers" },
+                      { "label": "Short Answers" },
+                      { "label": "Multiple Choice" },
+                      { "label": "Summary" }
+                    ]
+                  },
+                  {
+                    "label": "Understanding Diversity",
+                    "questionTypes": [
+                      { "label": "Long Answers" },
+                      { "label": "Short Answers" },
+                      { "label": "Multiple Choice" },
+                      { "label": "Summary" }
+                    ]
+                  },
+                  {
+                    "label": "Chandni",
+                    "questionTypes": [
+                      { "label": "Long Answers" },
+                      { "label": "Short Answers" },
+                      { "label": "Multiple Choice" },
+                      { "label": "Summary" }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "7",
+            "subjects": [
+              {
+                "label": "Civics",
+                "chapters": [
+                  {
+                    "label": "Diversity and Discrimination",
+                    "questionTypes": [
+                      { "label": "Long Answers" },
+                      { "label": "Short Answers" },
+                      { "label": "Multiple Choice" },
+                      { "label": "Summary" }
+                    ]
+                  },
+                  {
+                    "label": "Panchayati Raj",
+                    "questionTypes": [
+                      { "label": "Long Answers" },
+                      { "label": "Short Answers" },
+                      { "label": "Multiple Choice" },
+                      { "label": "Summary" }
+                    ]
+                  },
+                  {
+                    "label": "Rural Administration",
+                    "questionTypes": [
+                      { "label": "Long Answers" },
+                      { "label": "Short Answers" },
+                      { "label": "Multiple Choice" },
+                      { "label": "Summary" }
+                    ]
+                  },
+                  {
+                    "label": "Understanding Diversity",
+                    "questionTypes": [
+                      { "label": "Long Answers" },
+                      { "label": "Short Answers" },
+                      { "label": "Multiple Choice" },
+                      { "label": "Summary" }
+                    ]
+                  },
+                  {
+                    "label": "Urban Livelihoods",
+                    "questionTypes": [
+                      { "label": "Long Answers" },
+                      { "label": "Short Answers" },
+                      { "label": "Multiple Choice" },
+                      { "label": "Summary" }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

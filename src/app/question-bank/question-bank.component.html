@@ -1,0 +1,42 @@
+<div class="question-bank-container flex flex-column   lg:flex-row">
+  <div class="card flex justify-content-flex-start bank-container">
+    <form #questionBankForm="ngForm" (ngSubmit)="onSubmit(questionBankForm)"
+      class="question-bank-form flex flex-row flex-wrap justify-content-flex-start p-formgrid grid">
+      <div class="col-12">
+        <div class="card p-fluid">
+          <div class="field  col-12 questionBankdropdowns" *ngFor="let dropdown of commonService.questionBankdropdowns">
+            <label htmlfor="name1" class="font-bold p-component ">
+              {{ dropdown.label }}</label>
+            <p-dropdown [options]="dropdown.items" optionLabel="label" [name]="dropdown.label" class="bank-dropdowns"
+              ngModel class="dropdown.label" (onChange)="onDropDownClick($event,dropdown)"></p-dropdown>
+          </div>
+        </div>
+        <div class="flex justify-content-between">
+          <p-button class="menu-submit ml-2" id="menu-submit" type="submit" label="Submit"></p-button>
+          <p-button class="menu-display-pdf ml-2 mr-1" id="'menu-display-pdf'" label="PDF" (click)="OpenPdf()">
+          </p-button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="question-answers flex-grow-1 " *ngIf="commonService.questionAndAnswersArray.length">
+    <ol type="1" class="accordion-list">
+      <li class="bank-list" *ngFor="let item of commonService.questionAndAnswersArray">
+        <label for="accordion-answers" class="questions text-lg">
+          {{ item.Questions }}</label>
+        <p-accordion>
+          <p-accordionTab header="See answer">
+            <p id="accordion-answers" class="accordion-answers" [innerText]="item.Answers"></p>
+          </p-accordionTab>
+        </p-accordion>
+      </li>
+    </ol>
+  </div>
+  <div class="summary-container w-12" *ngIf="commonService.textContent">
+    <div class="card flex justify-content-center">
+      <p-card>
+        <p class="m-0" [innerText]="commonService.textContent.summary"></p>
+      </p-card>
+    </div>
+  </div>
+</div>
